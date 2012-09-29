@@ -1,3 +1,5 @@
+require "erb"
+
 class Application
   attr_reader :entry
   
@@ -28,5 +30,8 @@ class Application
   end
 
   def render
+    template = File.read('lib/template.html.erb')
+    erb = ERB.new(template)
+    erb.result(binding)
   end
 end
