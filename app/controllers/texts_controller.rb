@@ -1,8 +1,8 @@
 class TextsController < ApplicationController
   include TextsHelper
 
-  before_filter :set_text, :only => [:edit, :destroy]
-  before_filter :require_permision, :only=> [:edit, :destroy]
+  before_filter :set_text, :only => [:edit, :destroy, :update]
+  before_filter :require_permision, :only=> [:edit, :destroy, :update]
 
   # GET /texts
   def index
