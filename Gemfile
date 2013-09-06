@@ -54,4 +54,9 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '2.0.4'
 gem 'bootstrap-tooltip-rails'
 
-gem 'omniauth-twitter'  
+gem 'omniauth-twitter'
+
+# ExecJS lets you run JavaScript code from Ruby
+# got error: Could not find a JavaScript runtime
+gem 'therubyracer'
+gem 'execjs'
